@@ -1,0 +1,151 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* nav */
+.nav-wrapper {
+  background: url("/home-page-pics/hero-img.png") center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.brand-logo img {
+  width: 4.3rem;
+  height: 4rem;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Main content */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+  width: 100%;
+  min-height: 80vh;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 7rem;
+  gap: 5px;
+}
+
+.filter-btn {
+  padding: 1px 10px;
+  font-size: 1rem;
+  height: 20px;
+  background-color: #db9334;
+  color: white;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #b97b29;
+}
+
+.product-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  width: 50%;
+  height: 60rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  overflow: scroll;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.product-item {
+  width: 35%;
+  height: auto;
+  padding: 3rem;
+  margin: 5px;
+  text-align: center;
+  border-radius: 5%;
+  /* border: 1px solid red; */
+  transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-out;
+}
+
+.product-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.product-price {
+  color: green;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* footer */
+.page-footer {
+  color: white;
+  background-color: rgba(126, 33, 33, 0.891);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .product-containers {
+    width: 90%;
+    height: 100rem;
+  }
+
+  .product-item {
+    height: 24rem;
+  }
+
+  .page-footer {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .product-item {
+    height: 35rem;
+  }
+}
